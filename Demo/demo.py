@@ -168,6 +168,7 @@ with gr.Blocks(css=custom_css) as demo:
     
     with gr.Row(elem_classes="no-clip"):
         gr.HTML(f'<div class="svg-icon-container">{svg_content}</div>')
+        gr.HTML(f'<ion-icon src={svg_content}></ion-icon>')
         search_box = gr.Textbox(placeholder="Search by model name", show_label=False)
         AdvancedSearchBtn = gr.Button("Advanced Filters")
         
